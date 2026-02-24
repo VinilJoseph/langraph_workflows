@@ -9,3 +9,5 @@ __pycache__/
 outputs/
 logs/
 model_cache/
+test.jsonl
+manvenv/
