@@ -1,6 +1,6 @@
 from langgraph.graph import StateGraph, START
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 from langchain_community.tools import DuckDuckGoSearchRun
 from typing import TypedDict,Annotated
 from langchain_core.messages import BaseMessage, HumanMessage
@@ -20,7 +20,7 @@ client = MultiServerMCPClient(
         "arith": {
             "transport": "stdio",
             "command": "python3",          
-            "args": ["/Users/nitish/Desktop/mcp-math-server/main.py"],
+            "args": ["/Users/Vinil/Desktop/mcp-math-server/main.py"],
         },
         "expense": {
             "transport": "streamable_http",  # if this fails, try "sse"
